@@ -4,7 +4,7 @@ CardioVision is a deep learning–based ECG arrhythmia detection system built us
 
 This project is designed as an academic / final-year project with a strong focus on robust deployment and interpretability.
 
-Features
+Features:
 
 CNN–LSTM model for ECG arrhythmia classification
 
@@ -20,7 +20,7 @@ Gradient-based explainability heatmap for ECG signals
 
 Supports both numeric and symbolic labels (0–4 or N, S, V, F, Q)
 
-  Model Overview
+Model Overview:
 
 Architecture: Convolutional Neural Network + LSTM
 
@@ -40,7 +40,7 @@ Output Classes:
 
 ⚠️ The trained .h5 model file is not included in this repository due to GitHub size limits.
 
-Dashboard Preview
+Dashboard Preview:
 
 The dashboard allows users to:
 
@@ -79,7 +79,7 @@ streamlit run dashboard_ecg.py - command
 
 Enter the local path to your trained .h5 model in the sidebar when prompted.
 
-🧪 Explainability Approach
+🧪 Explainability Approach:
 
 Classical Grad-CAM is often unstable for CNN–LSTM architectures due to temporal dependencies introduced by LSTM layers.
 
@@ -92,3 +92,8 @@ Highlights clinically relevant ECG regions
 Works consistently at inference time
 
 This approach is commonly adopted in ECG deep learning research.
+
+Results:
+   ├─ Accuracy: 93.76%
+   ├─ Weighted F1: 93.12%
+   └─ Macro F1: 88.41%
